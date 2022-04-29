@@ -106,14 +106,14 @@ const resolvers = {
         return order;
       }
 
-      throw new AuthenticationError('Not logged in');
+      throw new AuthenticationError('You must log in');
     },
     updateUser: async (parent, args, context) => {
       if (context.user) {
         return await User.findByIdAndUpdate(context.user._id, args, { new: true });
       }
 
-      throw new AuthenticationError('Not logged in');
+      throw new AuthenticationError('You must log in');
     },
     updateProduct: async (parent, { _id, quantity }) => {
       const decrement = Math.abs(quantity) * -1;
@@ -124,13 +124,13 @@ const resolvers = {
       const user = await User.findOne({ email });
 
       if (!user) {
-        throw new AuthenticationError('Incorrect credentials');
+        throw new AuthenticationError('WRONG!');
       }
 
       const correctPw = await user.isCorrectPassword(password);
 
       if (!correctPw) {
-        throw new AuthenticationError('Incorrect credentials');
+        throw new AuthenticationError('WRONG!');
       }
 
       const token = signToken(user);
