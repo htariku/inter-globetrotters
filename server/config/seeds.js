@@ -217,12 +217,12 @@ db.once('open', async () => {
       quantity: 2
     },
     {
-      name: 'Liberate yourself from Fallujah, Iraq',
+      name: 'Fallujah, Iraq',
       category: categories[4]._id,
       description:
         'It will be like that one Call Of Duty game. We pay YOU to go here.',
       image: 'fall.jpg',
-      price: 500,
+      price: 10,
       quantity: 2003
     },
     {
