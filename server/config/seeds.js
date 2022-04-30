@@ -74,6 +74,15 @@ db.once('open', async () => {
       quantity: 91
     },
     {
+      name: 'Old San Juan, Puerto Rico',
+      description:
+        'Old San Juan is a historic district located at the "northwest triangle" of the islet of San Juan. Its area roughly correlates to the Ballajá, Catedral, Marina, Mercado, San Cristóbal, and San Francisco sub-barrios of barrio San Juan Antiguo in the municipality of San Juan, Puerto Rico.',
+      image: 'old.jpg',
+      category: categories[0]._id,
+      price: 4999.99,
+      quantity: 129
+    },
+    {
       name: 'All Inclusive Journey to Medellin, Columbia',
       category: categories[1]._id,
       description:
@@ -99,6 +108,15 @@ db.once('open', async () => {
       image: 'machu.jpg',
       price: 3000,
       quantity: 300
+    },
+    {
+      name: 'Caracas, Venezuela',
+      category: categories[1]._id,
+      description:
+        'Caracas, officially Santiago de León de Caracas, abbreviated as CCS, is the capital and largest city of Venezuela, and the center of the Metropolitan Region of Caracas. Caracas is located along the Guaire River in the northern part of the country, within the Caracas Valley of the Venezuelan coastal mountain range.',
+      image: 'cara.jpg',
+      price: 2000,
+      quantity: 100
     },
     {
       name: 'London, England Full Guided Tour',
@@ -137,6 +155,15 @@ db.once('open', async () => {
       quantity: 211
     },
     {
+      name: 'Cardiff City, Wales',
+      category: categories[2]._id,
+      description:
+        'Cardiff is the capital and largest city of Wales. It forms a principal area, officially known as the City and County of Cardiff, and the city is the eleventh-largest in the United Kingdom. Located in the south-east of Wales and in the Cardiff Capital Region, Cardiff is the county town of the historic county of Glamorgan and in 1974–1996 of South Glamorgan.',
+      image: 'card.jpg',
+      price: 10500,
+      quantity: 11
+    },
+    {
       name: 'Madagascar',
       category: categories[3]._id,
       description:
@@ -149,10 +176,19 @@ db.once('open', async () => {
       name: 'Mogadishu, Somalia',
       category: categories[3]._id,
       description:
-        'A rich history and totally SAFE. You will like it.',
+        'A rich history and totally SAFE, as we will provide you with 24/7 security. You will like it.',
       image: 'moga.jpg',
       price: 13250,
       quantity: 3212
+    },
+    {
+      name: 'Zanzibar Ocean Panorama Hotel all Inclusive resort',
+      category: categories[3]._id,
+      description:
+        'Zanzibar is one of Africa’s island paradises. You’ll enjoy crystal clear waters and great food on the island. There are tons of other islands around the archipelago that you can explore.',
+      image: 'zanz.jpg',
+      price: 15500,
+      quantity: 3
     },
     {
       name: 'Giza, Egypt Great Pyramid Tour',
@@ -226,6 +262,33 @@ db.once('open', async () => {
       quantity: 2003
     },
     {
+      name: 'Bangkok, Thailand',
+      category: categories[4]._id,
+      description:
+        'Bangkok, officially known in Thai as Krung Thep Maha Nakhon and colloquially as Krung Thep, is the capital and most populous city of Thailand. The city occupies 1,568.7 square kilometres in the Chao Phraya River delta in central Thailand and has an estimated population of 10.539 million as of 2020.',
+      image: 'bang.jpg',
+      price: 2500,
+      quantity: 267
+    },
+    {
+      name: 'Shanghai, China',
+      category: categories[4]._id,
+      description:
+        'Shanghai is one of the four direct-administered municipalities of the Peoples Republic of China. The city is located on the southern estuary of the Yangtze River, with the Huangpu River flowing through it. With a population of 24.89 million as of 2021,',
+      image: 'shan.jpg',
+      price: 7000,
+      quantity: 215
+    },
+    {
+      name: 'New Delhi, India',
+      category: categories[4]._id,
+      description:
+        'New Delhi is the capital of India and a part of the National Capital Territory of Delhi. New Delhi is the seat of all three branches of the government of India, hosting the Rashtrapati Bhavan, Parliament House, and the Supreme Court of India.',
+      image: 'newd.jpg',
+      price: 3000,
+      quantity: 5
+    },
+    {
       name: 'Antarctica Glacier and Penguin Tour',
       category: categories[5]._id,
       description:
@@ -262,6 +325,15 @@ db.once('open', async () => {
       quantity: 6
     },
     {
+      name: 'Tasmania, Australia',
+      category: categories[6]._id,
+      description:
+        'Tasmania is an island state of Australia. It is located 240 km to the south of the Australian mainland, separated from it by Bass Strait. The state encompasses the main island of Tasmania, the 26th-largest island in the world, and the surrounding 1000 islands.',
+      image: 'tas.jpg',
+      price: 50000,
+      quantity: 8
+    },
+    {
       name: 'Melbourne, Australia',
       category: categories[6]._id,
       description:
@@ -277,10 +349,10 @@ db.once('open', async () => {
   await User.deleteMany();
 
   await User.create({
-    firstName: 'Pamela',
-    lastName: 'Washington',
-    email: 'pamela@testmail.com',
-    password: 'password12345',
+    firstName: 'Orlando',
+    lastName: 'Lopez',
+    email: 'o.lopez92084@gmail.com',
+    password: '123456',
     orders: [
       {
         products: [products[0]._id, products[0]._id, products[1]._id]

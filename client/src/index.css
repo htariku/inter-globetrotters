@@ -1,6 +1,6 @@
 :root {
-  --primary: #232F3E;
-  --secondary: #47f364;
+  --primary: #830213;
+  --secondary: #e01818;
   --tertiary: #B12704;
   --light: #fafafa;
   --dark: #2c2732;
@@ -21,10 +21,10 @@ body {
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Karla', sans-serif;
+  font-family: 'modern';
   font-weight: 400;
   line-height: 1.5;
-  font-size: 16px;
+  font-size: 18px;
   color: var(--dark);
 }
 
