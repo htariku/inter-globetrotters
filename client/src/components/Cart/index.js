@@ -86,7 +86,7 @@ const Cart = () => {
             <strong>Total: ${calculateTotal()}</strong>
 
             {Auth.loggedIn() ? (
-              <button onClick={submitCheckout}>Checkout</button>
+              <button class="button" onClick={submitCheckout}>Checkout</button>
             ) : (
               <span>(log in to check out)</span>
             )}
@@ -95,7 +95,7 @@ const Cart = () => {
       ) : (
         <h3>
           <span role="img" aria-label="shocked">
-            😱
+          🤬 
           </span>
           You haven't added anything to your cart yet!
         </h3>

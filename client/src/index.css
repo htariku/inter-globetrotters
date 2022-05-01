@@ -1,7 +1,7 @@
 :root {
   --primary: #232F3E;
   --secondary: #F3A847;
-  --tertiary: #B12704;
+  --tertiary: #8496c5;
   --light: #fafafa;
   --dark: #272f32;
   --error: rgb(228, 46, 1);
@@ -21,11 +21,11 @@ body {
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Karla', sans-serif;
-  font-weight: 400;
+  font-family:"Avenir Next LT W01 Bold",sans-serif;
+  font-weight: 300;
   line-height: 1.5;
   font-size: 16px;
-  color: var(--dark);
+  color: rgb(0, 0, 0);
 }
 
 h1,
@@ -34,7 +34,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Rubik', sans-serif;
+  font-family: "Avenir Next LT W01 Bold",sans-serif;
   font-weight: 500;
   margin: 5px 0;
   line-height: 1.25;
@@ -70,9 +70,12 @@ p {
 }
 
 a {
-  color: var(--tertiary);
+  color: rgb(0, 0, 0);
   text-decoration: none;
-  font-weight: bold;
+  font-weight: 700;
+  font-size: large;
+  font-family: "Avenir Next LT W01 Bold",sans-serif;
+  justify-content: right;
 }
 
 a:hover {
@@ -80,23 +83,11 @@ a:hover {
 }
 
 header {
-  background: var(--primary);
+  background: black;
 }
 
 header a {
   color: var(--light);
-}
-
-button {
-  font-size: 1rem;
-  text-decoration: none;
-  padding: 0.25rem 1rem;
-  border-radius: .5rem;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  margin: 0 1px;
-  background-color: var(--secondary);
 }
 
 button:hover {
@@ -208,3 +199,105 @@ input:focus {
     width: 100%;
   }
 }
+
+
+
+
+/* .navbar {
+ height: 80px;
+ width: 100%;
+ background-color: bisque;
+ color: black;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ padding: 0 2rem;
+ font-size: 1.2rem;
+}
+.nav-logo {
+  text-decoration: none;
+  color:#232F3E;
+}
+.nav-links {
+display: grid;
+grid-template-columns: repeat(4, auto);
+grid-gap: 20px;
+list-style: none;
+}
+.nav-link {
+  text-decoration: none;
+  color:rgba(0, 0, 0, .5);
+  transition: 0.3s all;
+}
+.nav-link:hover {
+  color: green
+}
+.nav-icon {
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
+} */
+
+
+
+
+
+
+/* CSS button implented from willimton beaches template */
+.button {
+  background-color: transparent;
+  border: 1px solid #266DB6;
+  box-sizing: border-box;
+  color: #00132C;
+  font-family: "Avenir Next LT W01 Bold",sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 12px;
+  padding: 14px 21px;
+  position: relative;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  margin: 0 2px;
+  justify-content: space-between
+  ;
+}
+
+.button:hover,
+.button:active {
+  outline: 0;
+}
+
+.button:hover {
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.button:before {
+  background-color: #D5EDF6;
+  content: "";
+  height: calc(100% + 3px);
+  position: absolute;
+  right: -7px;
+  top: -6px;
+  transition: background-color 300ms ease-in;
+  width: 100%;
+  z-index: -1;
+  margin: 0 2px;
+  justify-content: space-between
+}
+
+.button:hover:before {
+  background-color: #6DCFF6;
+}
+
+@media (min-width: 768px) {
+  .button {
+    padding: 16px 32px;
+  }
+}
+
+
+
+

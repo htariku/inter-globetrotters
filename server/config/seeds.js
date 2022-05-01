@@ -1,5 +1,5 @@
 const db = require('./connection');
-const { User, Product, Category } = require('../models');
+const { User, Product, Category, Quiz } = require('../models');
 
 db.once('open', async () => {
   await Category.deleteMany();
@@ -151,5 +151,15 @@ db.once('open', async () => {
 
   console.log('users seeded');
 
+  const Quiz = await Quiz.insertMany([
+    { name: 'Food' },
+    { name: 'Household Supplies' },
+    { name: 'Electronics' },
+    { name: 'Books' },
+    { name: 'Toys' }
+  ]);
+
+
   process.exit();
 });
+
