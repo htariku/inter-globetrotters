@@ -25,7 +25,7 @@ db.once('open', async () => {
         'Includes a flight to DCA, a doubledecker bus tour, a Segway tour of the Monuments, and dinner at The Wharf.',
       image: 'DC.jpg',
       category: categories[0]._id,
-      price: 2999.99,
+      price: 12999.99,
       quantity: 50
     },
     {
@@ -34,7 +34,7 @@ db.once('open', async () => {
         'Come spend the weekend at the beautiful beaches of Miami. Enjoy the drinks, the food, and the nightlife.',
       image: 'sb.jpg',
       category: categories[0]._id,
-      price: 4999.99,
+      price: 145999.99,
       quantity: 74
     },
     {
@@ -43,7 +43,7 @@ db.once('open', async () => {
         'Be safe, and avoid dark alleys. If someone starts walking behind you.....RUN! Camden is a thrill ride for the entire family.',
       image: 'camd.jpg',
       category: categories[0]._id,
-      price: 6500,
+      price: 65000,
       quantity: 1200
     },
     {
@@ -61,7 +61,7 @@ db.once('open', async () => {
         'Fly into LaGuardia airport. Airport ride in Gypsy cab. Free Subway pass. Central Park tour at night. Statue of Liberty.',
       image: 'NYC.jpg',
       category: categories[0]._id,
-      price: 1278.99,
+      price: 12278.99,
       quantity: 50
     },
     {
@@ -70,7 +70,7 @@ db.once('open', async () => {
         'Dont do it. It is not worth it.',
       image: 'jack.jpg',
       category: categories[0]._id,
-      price: 253.99,
+      price: 7253.99,
       quantity: 91
     },
     {
@@ -79,7 +79,7 @@ db.once('open', async () => {
         'Old San Juan is a historic district located at the "northwest triangle" of the islet of San Juan. Its area roughly correlates to the Ballajá, Catedral, Marina, Mercado, San Cristóbal, and San Francisco sub-barrios of barrio San Juan Antiguo in the municipality of San Juan, Puerto Rico.',
       image: 'old.jpg',
       category: categories[0]._id,
-      price: 4999.99,
+      price: 14999.99,
       quantity: 129
     },
     {
@@ -88,7 +88,7 @@ db.once('open', async () => {
       description:
         'Includes round trip flight, rental car, hotel for 5 nights, and free breakfast.',
       image: 'medellin.jpg',
-      price: 1723.99,
+      price: 17723.99,
       quantity: 420
     },
     {
@@ -97,7 +97,7 @@ db.once('open', async () => {
       description:
         'An Urban metropolis with a Samba sway. See the beaches, the mountains, and the largest Art Deco statue in the world.',
       image: 'Rio.jpg',
-      price: 2299.99,
+      price: 22299.99,
       quantity: 500
     },
     {
@@ -106,7 +106,7 @@ db.once('open', async () => {
       description:
         'Machu Picchu is the worlds most visited site. Dating back to the 1400s, a marvel of limestone architecture on a high plateau deep in the Amazonian jungle.',
       image: 'machu.jpg',
-      price: 3000,
+      price: 30000,
       quantity: 300
     },
     {
@@ -115,7 +115,7 @@ db.once('open', async () => {
       description:
         'Caracas, officially Santiago de León de Caracas, abbreviated as CCS, is the capital and largest city of Venezuela, and the center of the Metropolitan Region of Caracas. Caracas is located along the Guaire River in the northern part of the country, within the Caracas Valley of the Venezuelan coastal mountain range.',
       image: 'cara.jpg',
-      price: 2000,
+      price: 20000,
       quantity: 100
     },
     {
@@ -124,7 +124,7 @@ db.once('open', async () => {
       description:
         'Includes round trip airfare, four nights in a hotel, guided tour of The Tower of London, Tower Bridge, Windsor Castle, Trafalgar Square.',
       image: 'london.jpg',
-      price: 3300,
+      price: 330000,
       quantity: 350
     },
     {
@@ -133,7 +133,7 @@ db.once('open', async () => {
       description:
         'Monaco Grand Prix, which takes place over 78 laps of the 3.337-kilometre Circuit de Monaco in Monte Carlo on Sunday, May 23. View the race from your hotel balcony.',
       image: 'Monaco.jpg',
-      price: 25000,
+      price: 250000,
       quantity: 20
     },
     {
@@ -142,7 +142,7 @@ db.once('open', async () => {
       description:
         'Greenland is an island nation located between the Arctic and Atlantic oceans, east of the Canadian Arctic Archipelago. Greenland is the worlds largest island, and one of the three constituent countries that form the Kingdom of Denmark, along with Denmark and the Faroe Islands; the citizens of these countries are all Danish nationals.',
       image: 'nuuk.jpg',
-      price: 4250,
+      price: 425000,
       quantity: 8
     },
     {
@@ -151,7 +151,7 @@ db.once('open', async () => {
       description:
         'Minsk is the capital and the largest city of Belarus, located on the Svislach and the now subterranean Niamiha rivers. As the capital, Minsk has a special administrative status in Belarus and is the administrative centre of Minsk Region and Minsk District.',
       image: 'minsk.jpg',
-      price: 11000,
+      price: 110000,
       quantity: 211
     },
     {
@@ -160,7 +160,7 @@ db.once('open', async () => {
       description:
         'Cardiff is the capital and largest city of Wales. It forms a principal area, officially known as the City and County of Cardiff, and the city is the eleventh-largest in the United Kingdom. Located in the south-east of Wales and in the Cardiff Capital Region, Cardiff is the county town of the historic county of Glamorgan and in 1974–1996 of South Glamorgan.',
       image: 'card.jpg',
-      price: 10500,
+      price: 105000,
       quantity: 11
     },
     {
@@ -169,7 +169,7 @@ db.once('open', async () => {
       description:
         'Madagascar, island country lying off the southeastern coast of Africa. Madagascar is the fourth largest island in the world, after Greenland, New Guinea, and Borneo.',
       image: 'mada.jpg',
-      price: 3119.99,
+      price: 31199.99,
       quantity: 21
     },
     {
@@ -178,7 +178,7 @@ db.once('open', async () => {
       description:
         'A rich history and totally SAFE, as we will provide you with 24/7 security. You will like it.',
       image: 'moga.jpg',
-      price: 13250,
+      price: 130250,
       quantity: 3212
     },
     {
@@ -187,7 +187,7 @@ db.once('open', async () => {
       description:
         'Zanzibar is one of Africa’s island paradises. You’ll enjoy crystal clear waters and great food on the island. There are tons of other islands around the archipelago that you can explore.',
       image: 'zanz.jpg',
-      price: 15500,
+      price: 150500,
       quantity: 3
     },
     {
@@ -196,7 +196,7 @@ db.once('open', async () => {
       description:
         'Come for an all inclusive guided tour of one of the worlds Great wonders. The Great Pyramids.',
       image: 'giza.jpg',
-      price: 15250,
+      price: 200250,
       quantity: 212
     },
     {
@@ -205,7 +205,7 @@ db.once('open', async () => {
       description:
         'Accra is the capital and largest city of Ghana, located on the southern coast at the Gulf of Guinea, which is part of the Atlantic Ocean.',
       image: 'accr.jpg',
-      price: 1250,
+      price: 12500,
       quantity: 27
     },
     {
@@ -213,7 +213,7 @@ db.once('open', async () => {
       category: categories[4]._id,
       description: 'The Tokyo Metropolis, is the capital and largest city of Japan. Its metropolitan area is the most populous in the world, with an estimated 37.468 million residents in 2018.',
       image: 'tokyo.jpg',
-      price: 4000.50,
+      price: 40000.50,
       quantity: 100
     },
     {
@@ -222,7 +222,7 @@ db.once('open', async () => {
       description:
         'Phuket province is located in southern Thailand.It is the biggest Island of Thailand and sits on the Andaman sea.The nearest province to the north is Phang-nga and the nearest provinces to the east are Phang-nga and Krabi.',
       image: 'phuket.jpg',
-      price: 5000,
+      price: 50000,
       quantity: 225
     },
     {
@@ -231,7 +231,7 @@ db.once('open', async () => {
       description:
         'Ulaanbaatar, previously anglicized as Ulan Bator, is the capital and most populous city of Mongolia. The municipality is located in north central Mongolia at an elevation of about 1,300 metres in a valley on the Tuul River.',
       image: 'mongo.jpg',
-      price: 2000,
+      price: 20000,
       quantity: 125
     },
     {
@@ -249,16 +249,16 @@ db.once('open', async () => {
       description:
         'Dhaka, formerly known as Dacca, is the capital and largest city of Bangladesh, as well as the worlds largest Bengali speaking city. It is the eighth largest and sixth most densely populated city in the world with a population of 8.9 million residents as of 2011, and a population of over 21.7 million residents in the Greater Dhaka Area.',
       image: 'dhaka.jpg',
-      price: 110500,
+      price: 11500,
       quantity: 2
     },
     {
       name: 'Fallujah, Iraq',
       category: categories[4]._id,
       description:
-        'It will be like that one Call Of Duty game. We pay YOU to go here.',
+        'It will be like that one Call Of Duty game. Always check your corners.',
       image: 'fall.jpg',
-      price: 10,
+      price: 1000,
       quantity: 2003
     },
     {
@@ -267,7 +267,7 @@ db.once('open', async () => {
       description:
         'Bangkok, officially known in Thai as Krung Thep Maha Nakhon and colloquially as Krung Thep, is the capital and most populous city of Thailand. The city occupies 1,568.7 square kilometres in the Chao Phraya River delta in central Thailand and has an estimated population of 10.539 million as of 2020.',
       image: 'bang.jpg',
-      price: 2500,
+      price: 25000,
       quantity: 267
     },
     {
@@ -276,7 +276,7 @@ db.once('open', async () => {
       description:
         'Shanghai is one of the four direct-administered municipalities of the Peoples Republic of China. The city is located on the southern estuary of the Yangtze River, with the Huangpu River flowing through it. With a population of 24.89 million as of 2021,',
       image: 'shan.jpg',
-      price: 7000,
+      price: 70000,
       quantity: 215
     },
     {
@@ -285,7 +285,7 @@ db.once('open', async () => {
       description:
         'New Delhi is the capital of India and a part of the National Capital Territory of Delhi. New Delhi is the seat of all three branches of the government of India, hosting the Rashtrapati Bhavan, Parliament House, and the Supreme Court of India.',
       image: 'newd.jpg',
-      price: 3000,
+      price: 30000,
       quantity: 5
     },
     {
@@ -294,7 +294,7 @@ db.once('open', async () => {
       description:
         'See lots of ice, feel the freezing cold, and pet the penguins.',
       image: 'anta.jpg',
-      price: 587.99,
+      price: 32587.99,
       quantity: 12
     },
     {
@@ -303,7 +303,7 @@ db.once('open', async () => {
       description:
         'Cold and remote, youll LOVE it!',
       image: 'pole.jpg',
-      price: 199.99,
+      price: 8199.99,
       quantity: 2
     },
     {
@@ -312,7 +312,7 @@ db.once('open', async () => {
       description:
         'Sydney is the capital city of the state of New South Wales, and the most populous city in Australia and Oceania. Go down under and tour the formunda.',
       image: 'syd.jpg',
-      price: 1687.49,
+      price: 16687.49,
       quantity: 19
     },
     {
@@ -339,7 +339,7 @@ db.once('open', async () => {
       description:
         'Melbourne is the capital and most-populous city of the Australian state of Victoria, and the second-most populous city in both Australia and Oceania. Package includes 7 nights in a 5 star hotel.',
       image: 'melb.jpg',
-      price: 6015,
+      price: 60015,
       quantity: 48
     }
   ]);
