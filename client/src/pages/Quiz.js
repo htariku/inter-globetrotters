@@ -9,37 +9,82 @@ function Quiz() {
   const questions = [
     {
       questionText:
-        "Do you like hot or cold?",
+        "What is your ideal climate?",
       answerOptions: [
-        { answerText: "Hot"},
-        { answerText: "Cold"},
+        { answerText: "Tropical"},
+        { answerText: "Four seasons"},
+        { answerText: "70°F year round"},
+        { answerText: "Snow"},
       ],
     },
     {
-      questionText: "What is your biggest pet peeve?",
+      questionText: "What type of enviornment do you most want to live in?",
       answerOptions: [
-        { answerText: "Interrupting"},
-        { answerText: "Loud Chewing"},
-        { answerText: "Slow Internet"},
-        { answerText: "Being late"},
+        { answerText: "City"},
+        { answerText: "Beach"},
+        { answerText: "Mountains"},
+        { answerText: "Island"},
       ],
     },
     {
-      questionText: "Your weekend consists of...",
+      questionText: "What are your language abilities?",
       answerOptions: [
-        { answerText: "Sleeping all day " },
-        { answerText: "Playing call of duty"},
-        { answerText: "Partyyyyy" },
-        { answerText: "Outside adventures"},
+        { answerText: "Speak more than 1 langugae" },
+        { answerText: "Only speak English"},
+        { answerText: "Learning new langauges" },
       ],
     },
     {
-      questionText: "Which role excites you the most?",
+        questionText: "What is your favorite dish?",
+        answerOptions: [
+          { answerText: "Pizza" },
+          { answerText: "Sushi"},
+          { answerText: "Pasta" },
+          { answerText: "Salad" },
+        ],
+      },
+      {
+        questionText: "Which of these would you most likely spend your weekend doing?",
+        answerOptions: [
+          { answerText: "Coffee shops" },
+          { answerText: "Spa"},
+          { answerText: "going to a bar?"},
+          { answerText: "Movies"},
+        ],
+      },
+      {
+        questionText: "Which of th following are you most passionate about?",
+        answerOptions: [
+          { answerText: "Culture" },
+          { answerText: "Tradition"},
+          { answerText: "Adventure" },
+          { answerText: "Art" },
+        ],
+      },
+      {
+        questionText: "What's the perfect way to spend a day?",
+        answerOptions: [
+          { answerText: "Site seeing"},
+          { answerText: "Kayaking"},
+          { answerText: "Visiting a Winery" },
+          { answerText: "Shopping" },
+        ],
+      },
+      {
+        questionText: "Why do you like to travel?",
+        answerOptions: [
+          { answerText: "Escape responsibilities" },
+          { answerText: "See nature's beauties"},
+          { answerText: "Create memories with family/friends" },
+          { answerText: "Learn new cultures" },
+        ],
+      },
+    {
+      questionText: "Is having acess to high speed internet important to you?",
       answerOptions: [
-        { answerText: "Marine Biologist"},
-        { answerText: "Santa Clause"},
-        { answerText: "Sergeant Major of the Army" },
-        { answerText: "President"},
+        { answerText: "Yes"},
+        { answerText: "No"},
+      
       ],
     },
   ];
@@ -59,6 +104,26 @@ function Quiz() {
       setShowScore(true);
     }
   };
+//   var bgImageArray = [
+//     "link1" , "link2" , "link3"
+//     ]
+    
+//     base = "https://lh3.googleusercontent.com/pw/";
+//     bgImageArray.forEach(function(img){
+//         new Image().src = base + img; 
+//     });
+    
+//     function backgroundSequence() {
+//       window.clearTimeout();
+//       var k = 0;
+//       for (i = 0; i < bgImageArray.length; i++) {
+//         setTimeout(function(){ 
+//           document.getElementById('animated-bg').style.background = "url(" + base + bgImageArray[k] + ") no-repeat center center";
+//         if ((k + 1) === bgImageArray.length) { setTimeout(function() { backgroundSequence() }, (60000 / tempo.value))} else { k++; }      
+//         }, (60000 / tempo.value) * i) 
+//       }
+//     }
+    
   return (
     <div className="app">
       {showScore ? (
@@ -89,5 +154,7 @@ function Quiz() {
     </div>
   );
 }
+
+
 
 export default Quiz;
