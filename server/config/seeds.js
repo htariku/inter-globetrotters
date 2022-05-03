@@ -38,7 +38,7 @@ db.once('open', async () => {
       quantity: 74
     },
     {
-      name: 'Camden, New Jersey - Heaven on Earth',
+      name: 'Camden, New Jersey',
       description:
         'Be safe, and avoid dark alleys. If someone starts walking behind you.....RUN! Camden is a thrill ride for the entire family.',
       image: 'camd.jpg',
@@ -47,7 +47,7 @@ db.once('open', async () => {
       quantity: 1200
     },
     {
-      name: 'LA - Skid Row - Up Close and Personal for one Week',
+      name: 'LA - Skid Row - Up Close',
       description:
         'Ever seen the movie Judgement Night? Thats what this trip will be like for you. It will be worth every penny.',
       image: 'skid.jpg',
@@ -83,7 +83,7 @@ db.once('open', async () => {
       quantity: 129
     },
     {
-      name: 'All Inclusive Journey to Medellin, Columbia',
+      name: 'Journey to Medellin, Columbia',
       category: categories[1]._id,
       description:
         'Includes round trip flight, rental car, hotel for 5 nights, and free breakfast.',
@@ -101,7 +101,7 @@ db.once('open', async () => {
       quantity: 500
     },
     {
-      name: 'Ancient Ruins of Machu Picchu, Peru',
+      name: 'Ruins of Machu Picchu, Peru',
       category: categories[1]._id,
       description:
         'Machu Picchu is the worlds most visited site. Dating back to the 1400s, a marvel of limestone architecture on a high plateau deep in the Amazonian jungle.',
@@ -119,7 +119,7 @@ db.once('open', async () => {
       quantity: 100
     },
     {
-      name: 'London, England Full Guided Tour',
+      name: 'London, England Full Tour',
       category: categories[2]._id,
       description:
         'Includes round trip airfare, four nights in a hotel, guided tour of The Tower of London, Tower Bridge, Windsor Castle, Trafalgar Square.',
@@ -128,7 +128,7 @@ db.once('open', async () => {
       quantity: 350
     },
     {
-      name: 'Monaco during the Grand Prix',
+      name: 'Monaco during Grand Prix',
       category: categories[2]._id,
       description:
         'Monaco Grand Prix, which takes place over 78 laps of the 3.337-kilometre Circuit de Monaco in Monte Carlo on Sunday, May 23. View the race from your hotel balcony.',
@@ -137,7 +137,7 @@ db.once('open', async () => {
       quantity: 20
     },
     {
-      name: 'Tour the Capital of Greenland, Nuuk!',
+      name: 'Capital of Greenland, Nuuk!',
       category: categories[2]._id,
       description:
         'Greenland is an island nation located between the Arctic and Atlantic oceans, east of the Canadian Arctic Archipelago. Greenland is the worlds largest island, and one of the three constituent countries that form the Kingdom of Denmark, along with Denmark and the Faroe Islands; the citizens of these countries are all Danish nationals.',
@@ -182,7 +182,7 @@ db.once('open', async () => {
       quantity: 3212
     },
     {
-      name: 'Zanzibar Ocean Panorama Hotel all Inclusive resort',
+      name: 'Zanzibar',
       category: categories[3]._id,
       description:
         'Zanzibar is one of Africa’s island paradises. You’ll enjoy crystal clear waters and great food on the island. There are tons of other islands around the archipelago that you can explore.',
@@ -289,7 +289,7 @@ db.once('open', async () => {
       quantity: 5
     },
     {
-      name: 'Antarctica Glacier and Penguin Tour',
+      name: 'Antarctica Glacier Tour',
       category: categories[5]._id,
       description:
         'See lots of ice, feel the freezing cold, and pet the penguins.',
@@ -307,7 +307,7 @@ db.once('open', async () => {
       quantity: 2
     },
     {
-      name: 'Sydney, Australia Outback Tour',
+      name: 'Sydney, Australia',
       category: categories[6]._id,
       description:
         'Sydney is the capital city of the state of New South Wales, and the most populous city in Australia and Oceania. Go down under and tour the formunda.',
