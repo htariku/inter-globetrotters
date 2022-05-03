@@ -1,3 +1,4 @@
+
 import React, { useEffect } from 'react';
 import { loadStripe } from '@stripe/stripe-js';
 import { useLazyQuery } from '@apollo/client';
@@ -63,8 +64,8 @@ const Cart = () => {
   if (!state.cartOpen) {
     return (
       <div className="cart-closed" onClick={toggleCart}>
-        <span role="img" aria-label="trash">
-          🛒
+        <span role="img" aria-label="plane">
+          ✈️
         </span>
       </div>
     );
@@ -75,7 +76,7 @@ const Cart = () => {
       <div className="close" onClick={toggleCart}>
         [close]
       </div>
-      <h2>Shopping Cart</h2>
+      <h2>Your Itinerary</h2>
       {state.cart.length ? (
         <div>
           {state.cart.map((item) => (
@@ -86,7 +87,7 @@ const Cart = () => {
             <strong>Total: ${calculateTotal()}</strong>
 
             {Auth.loggedIn() ? (
-              <button class="button" onClick={submitCheckout}>Checkout</button>
+              <button onClick={submitCheckout}>Checkout</button>
             ) : (
               <span>(log in to check out)</span>
             )}
@@ -94,10 +95,10 @@ const Cart = () => {
         </div>
       ) : (
         <h3>
-          <span role="img" aria-label="shocked">
-          🤬 
-          </span>
-          You haven't added anything to your cart yet!
+        <span role="img" aria-label="map">
+        🗺️
+        </span>
+          You haven't added a package to your cart yet!
         </h3>
       )}
     </div>

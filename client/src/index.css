@@ -41,7 +41,8 @@ h6 {
 }
 
 h1 {
-  font-size: 2.25rem;
+  font-size: 25px;
+  vertical-align: center;
 }
 
 h2 {
@@ -76,6 +77,10 @@ a {
   font-size: large;
   font-family: "Avenir Next LT W01 Bold",sans-serif;
   justify-content: right;
+  list-style-type: none;
+}
+ul {
+  list-style-type: none;
 }
 
 a:hover {
@@ -203,40 +208,6 @@ input:focus {
 
 
 
-/* .navbar {
- height: 80px;
- width: 100%;
- background-color: bisque;
- color: black;
- display: flex;
- justify-content: space-between;
- align-items: center;
- padding: 0 2rem;
- font-size: 1.2rem;
-}
-.nav-logo {
-  text-decoration: none;
-  color:#232F3E;
-}
-.nav-links {
-display: grid;
-grid-template-columns: repeat(4, auto);
-grid-gap: 20px;
-list-style: none;
-}
-.nav-link {
-  text-decoration: none;
-  color:rgba(0, 0, 0, .5);
-  transition: 0.3s all;
-}
-.nav-link:hover {
-  color: green
-}
-.nav-icon {
-  display: none;
-  font-size: 2rem;
-  cursor: pointer;
-} */
 
 
 
@@ -260,7 +231,8 @@ list-style: none;
   -webkit-user-select: none;
   touch-action: manipulation;
   margin: 0 2px;
-  justify-content: space-between
+  justify-content: space-between;
+  list-style-type: none;
   ;
 }
 
@@ -300,8 +272,7 @@ list-style: none;
 
 
 
-
-/* css styling for quiz */
+/* quiz css */
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -389,6 +360,7 @@ button {
   align-items: center;
   border: 5px solid #234668;
   cursor: pointer;
+  
 }
 
 .correct {
@@ -399,7 +371,7 @@ button {
   background-color: #ff3333;
 }
 
-button:hover {
+ button:hover {
   background-color: #555e7d;
 }
 
@@ -409,4 +381,4 @@ button:focus {
 
 button svg {
   margin-right: 5px;
-}
+} 

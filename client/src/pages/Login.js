@@ -38,7 +38,7 @@ function Login(props) {
         <div className="flex-row space-between my-2">
           <label htmlFor="email">Email address:</label>
           <input
-            placeholder="youremail@test.com"
+            placeholder="Type email here"
             name="email"
             type="email"
             id="email"
@@ -48,7 +48,7 @@ function Login(props) {
         <div className="flex-row space-between my-2">
           <label htmlFor="pwd">Password:</label>
           <input
-            placeholder="******"
+            placeholder="@#%#^@!"
             name="password"
             type="password"
             id="pwd"
@@ -61,7 +61,7 @@ function Login(props) {
           </div>
         ) : null}
         <div className="flex-row flex-end">
-          <button class="button" type="submit">Submit</button>
+          <button type="submit">Submit</button>
         </div>
       </form>
     </div>

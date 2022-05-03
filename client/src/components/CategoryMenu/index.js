@@ -43,9 +43,9 @@ function CategoryMenu() {
 
   return (
     <div>
-      <h2>Choose a Category:</h2>
+      <h2>Choose a Continent to Explore:</h2>
       {categories.map((item) => (
-        <button class="button"
+        <button
           key={item._id}
           onClick={() => {
             handleClick(item._id);
