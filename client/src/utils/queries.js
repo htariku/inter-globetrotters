@@ -15,6 +15,18 @@ export const QUERY_PRODUCTS = gql`
     }
   }
 `;
+export const RANDOM_PRODUCT = gql`
+query getrandomProduct {
+  randomProduct {
+    _id
+    name
+    description
+    price
+    quantity
+    image
+  }
+}
+`;
 
 export const QUERY_CHECKOUT = gql`
   query getCheckout($products: [ID]!) {

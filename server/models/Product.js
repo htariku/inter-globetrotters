@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-
+const random = require('mongoose-simple-random');
 const { Schema } = mongoose;
 
 const productSchema = new Schema({
@@ -30,6 +30,7 @@ const productSchema = new Schema({
     required: true
   }
 });
+productSchema.plugin(random);
 
 const Product = mongoose.model('Product', productSchema);
 

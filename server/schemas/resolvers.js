@@ -26,6 +26,15 @@ const resolvers = {
     product: async (parent, { _id }) => {
       return await Product.findById(_id).populate('category');
     },
+    randomProduct: async (parent, args, context) => {
+      // if (context.user) {
+        return await Product.findOneRandom(function(err, result){
+          if (!err) {
+            console.log(result); // 1 element
+          }
+        });
+      // }
+    },
     user: async (parent, args, context) => {
       if (context.user) {
         const user = await User.findById(context.user._id).populate({

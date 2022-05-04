@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-// import { useMutation } from "@apollo/client";
-// import { Link } from "react-router-dom";
-// import { LOGIN } from "../utils/mutations";
+import { useMutation } from "@apollo/client";
+import { Link } from "react-router-dom";
+import { RANDOM_PRODUCT } from "../utils/queries";
 // import Auth from "../utils/auth";
 
 
@@ -89,7 +89,7 @@ function Quiz() {
     },
   ];
   const [currentQuestion, setCurrentQuestion] = useState(0);
-  const [showScore, setShowScore] = useState(false);
+  const [showResult, setShowResult] = useState(false);
   const [score, setScore] = useState(0);
 
   const handleAnswerOptionClick = (isCorrect) => {
@@ -101,7 +101,7 @@ function Quiz() {
     if (nextQuestion < questions.length) {
       setCurrentQuestion(nextQuestion);
     } else {
-      setShowScore(true);
+      setShowResult(true);
     }
   };
 //   var bgImageArray = [
@@ -126,9 +126,15 @@ function Quiz() {
     
   return (
     <div className="app">
-      {showScore ? (
+      {showResult ? (
         <div className="score-section">
-          You scored {score} out of {questions.length}
+         <Link to={`/products/${_id}`}>
+        <img
+          alt={name}
+          src={`/images/${image}`}
+        />
+        <p>{name}</p>
+      </Link>
         </div>
       ) : (
         <>

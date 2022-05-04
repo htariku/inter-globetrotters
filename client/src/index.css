@@ -1,5 +1,5 @@
 :root {
-  --primary: #830213;
+  --primary: #027483;
   --secondary: #e01818;
   --tertiary: #B12704;
   --light: #fafafa;
@@ -27,6 +27,9 @@ body {
   font-size: 18px;
   color: var(--dark);
 }
+/* ul {
+  text-align: center;
+} */
 
 h1,
 h2,

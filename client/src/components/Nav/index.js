@@ -19,6 +19,11 @@ function Nav() {
               Logout
             </a>
           </li>
+          <li class="navbar" className="mx-1">
+            <Link to="/quiz">
+              Quiz
+            </Link>
+          </li>
         </ul>
       );
     } else {
