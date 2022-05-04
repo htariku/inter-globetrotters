@@ -48,7 +48,7 @@ function ProductItem(item) {
         />
         <p>{name}</p>
       </Link>
-      <div>
+      <div class="row-rap">
         <div>{quantity} {pluralize("item", quantity)} in stock</div>
         <span>${price}</span>
       </div>
