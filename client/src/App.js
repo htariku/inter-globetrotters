@@ -19,6 +19,7 @@ import { StoreProvider } from './utils/GlobalState';
 import Success from './pages/Success';
 import OrderHistory from './pages/OrderHistory';
 import Quiz from './pages/Quiz';
+import About from './pages/About';
 
 
 const httpLink = createHttpLink({
@@ -55,6 +56,7 @@ function App() {
               <Route exact path="/orderHistory" component={OrderHistory} />
               <Route exact path="/products/:id" component={Detail} />
               <Route exact path="/quiz" component={Quiz} />
+              <Route exact path="/about" component={About} />
               <Route component={NoMatch} />
             </Switch>
           </StoreProvider>

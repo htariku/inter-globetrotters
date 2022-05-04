@@ -1,10 +1,10 @@
 import React, { useState } from "react";
-import { useMutation } from "@apollo/client";
+// import { useMutation } from "@apollo/client";
 import { Link } from "react-router-dom";
+import { useQuery } from '@apollo/client';
 import { RANDOM_PRODUCT } from "../utils/queries";
+import Jumbotron from '../components/Jumbotron';
 // import Auth from "../utils/auth";
-
-
 function Quiz() {
   const questions = [
     {
@@ -84,19 +84,16 @@ function Quiz() {
       answerOptions: [
         { answerText: "Yes"},
         { answerText: "No"},
-      
       ],
     },
   ];
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [showResult, setShowResult] = useState(false);
   const [score, setScore] = useState(0);
-
   const handleAnswerOptionClick = (isCorrect) => {
     if (isCorrect) {
       setScore(score + 1);
     }
-
     const nextQuestion = currentQuestion + 1;
     if (nextQuestion < questions.length) {
       setCurrentQuestion(nextQuestion);
@@ -104,38 +101,26 @@ function Quiz() {
       setShowResult(true);
     }
   };
-//   var bgImageArray = [
-//     "link1" , "link2" , "link3"
-//     ]
-    
-//     base = "https://lh3.googleusercontent.com/pw/";
-//     bgImageArray.forEach(function(img){
-//         new Image().src = base + img; 
-//     });
-    
-//     function backgroundSequence() {
-//       window.clearTimeout();
-//       var k = 0;
-//       for (i = 0; i < bgImageArray.length; i++) {
-//         setTimeout(function(){ 
-//           document.getElementById('animated-bg').style.background = "url(" + base + bgImageArray[k] + ") no-repeat center center";
-//         if ((k + 1) === bgImageArray.length) { setTimeout(function() { backgroundSequence() }, (60000 / tempo.value))} else { k++; }      
-//         }, (60000 / tempo.value) * i) 
-//       }
-//     }
-    
+  function resultLink() {
+    const { data } = (RANDOM_PRODUCT);
+    let randomProduct;
+    if ( data ) {
+      randomProduct = data.randomProduct._id;
+    }
+  }
   return (
     <div className="app">
       {showResult ? (
-        <div className="score-section">
-         <Link to={`/products/${_id}`}>
-        <img
-          alt={name}
-          src={`/images/${image}`}
-        />
-        <p>{name}</p>
-      </Link>
+         <Jumbotron>
+           <div className="score-section">
+          <h2>Thank you for completing the Questionaire.</h2>
+          <h2>You will be routed to a destination shortly.</h2>
+          <h2>Safe Travels!</h2>
+          <router>
+         <Link to={`/products/${resultLink}`}>
+      </Link></router>
         </div>
+        </Jumbotron>
       ) : (
         <>
           <div className="question-section">
@@ -160,7 +145,5 @@ function Quiz() {
     </div>
   );
 }
-
-
-
 export default Quiz;
+
