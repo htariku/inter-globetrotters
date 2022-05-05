@@ -9,7 +9,7 @@
 # Description
 Welcome to International GlobeTrotters. We are comprised of expert level adventurers who have compiled their many years of travel experience into our list of destination packages. Our destination list spans the entire globe. We can set you up in sunny Jacksonville, Florida, cool New Jersey, or overcast London, England, or if you prefer cold, we can even send you to the South Pole. All for prices anyone can afford. We also have a passion for writing code, so we hope you’ll enjoy logging into our full stack MERN developed webpage. If you’re unsure of where to go, we’ve developed a questionnaire to help narrow you down to a good destination. Just answer the questions and we’ll recommend an exotic locale for you to visit. Enjoy! Our Site is also mobile responsive.
 
-<img width="758" alt="Screen Shot 2022-03-13 at 7 17 29 PM" src="https://user-images.githubusercontent.com/94089824/166857334-e2a1f0c9-4bf4-4266-87bf-cebb506abd1b.png">
+<img width="1107" alt="Screen Shot 2022-05-04 at 10 53 27 PM" src="https://user-images.githubusercontent.com/94089824/166857581-137c0f6c-48dd-433a-a9ff-edae120e7816.png">
 
 
    # Table of Content: 
