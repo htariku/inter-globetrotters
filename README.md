@@ -5,6 +5,7 @@ Welcome to International GlobeTrotters. We are comprised of expert level adventu
 
 # Usage
 Login to browse our travel packages, add to your cart, and checkout! Your purchases will be saved to your user history. Has a questionnaire and an about us page. 
+![image](https://user-images.githubusercontent.com/94086814/166850583-b0dd05fc-7736-4a59-a5b0-e957c608e038.png)
 
 # Technologies Used
 - MERN
@@ -23,5 +24,5 @@ Login to browse our travel packages, add to your cart, and checkout! Your purcha
 
 # Deployed Link
 
-- Heroku Link - 
-- Github Link - 
+- Heroku Link - https://inter-globetrotters.herokuapp.com/login
+- Github Link - https://github.com/htariku/inter-globetrotters.git
