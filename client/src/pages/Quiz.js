@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
 // import { useMutation } from "@apollo/client";
-import {  Redirect, Route } from "react-router-dom";
-// import { useQuery } from '@apollo/client';
-// import { RANDOM_PRODUCT } from "../utils/queries";
+import { Link, Redirect, Route } from "react-router-dom";
+import { useQuery } from '@apollo/client';
+import { RANDOM_PRODUCT } from "../utils/queries";
 import Jumbotron from '../components/Jumbotron';
 // import Auth from "../utils/auth";
 // import { Data, Redirect } from './server/schemas/resolvers';
@@ -122,7 +122,7 @@ function Quiz() {
           <h2>Thank you for completing the Questionaire.</h2>
           <h2>You will be routed to a destination shortly.</h2>
           <h2>Safe Travels!</h2>
-          <Redirect to="/products/6272f58dcb1ee55f286b224b" />
+          <Redirect to="/products/627335d1d9bd1d6a9bef9557" />
         </div>
         </Jumbotron>
       ) : (
