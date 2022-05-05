@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from "react";
 // import { useMutation } from "@apollo/client";
 import {  Redirect } from "react-router-dom";
-// import { useQuery } from '@apollo/client';
+import { useQuery } from '@apollo/client';
 // import { RANDOM_PRODUCT } from "../utils/queries";
 import Jumbotron from '../components/Jumbotron';
-// import Auth from "../utils/auth";
+import Auth from "../utils/auth";
 // import { Data, Redirect } from './server/schemas/resolvers';
 function Quiz() {
   const questions = [
