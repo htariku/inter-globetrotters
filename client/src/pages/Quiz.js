@@ -1,9 +1,11 @@
-import React, { useState } from "react";
-import { useMutation } from "@apollo/client";
-import { Link } from "react-router-dom";
-import { RANDOM_PRODUCT } from "../utils/queries";
+import React, { useState, useEffect } from "react";
+// import { useMutation } from "@apollo/client";
+import { Redirect } from "react-router-dom";
+// import { useQuery } from '@apollo/client';
+// import { RANDOM_PRODUCT } from "../utils/queries";
+import Jumbotron from '../components/Jumbotron';
 // import Auth from "../utils/auth";
-
+// import { Data, Redirect } from './server/schemas/resolvers';
 
 function Quiz() {
   const questions = [
@@ -104,38 +106,34 @@ function Quiz() {
       setShowResult(true);
     }
   };
-//   var bgImageArray = [
-//     "link1" , "link2" , "link3"
-//     ]
-    
-//     base = "https://lh3.googleusercontent.com/pw/";
-//     bgImageArray.forEach(function(img){
-//         new Image().src = base + img; 
-//     });
-    
-//     function backgroundSequence() {
-//       window.clearTimeout();
-//       var k = 0;
-//       for (i = 0; i < bgImageArray.length; i++) {
-//         setTimeout(function(){ 
-//           document.getElementById('animated-bg').style.background = "url(" + base + bgImageArray[k] + ") no-repeat center center";
-//         if ((k + 1) === bgImageArray.length) { setTimeout(function() { backgroundSequence() }, (60000 / tempo.value))} else { k++; }      
-//         }, (60000 / tempo.value) * i) 
-//       }
-//     }
-    
+
+  // function resultLink() {
+  //   const { data } = (RANDOM_PRODUCT);
+  //   let randomProduct;
+
+  //   if ( data ) {
+  //     randomProduct = data.randomProduct._id;
+  //   }
+  // }
+  useEffect(() => {
+  if (setShowResult) {
+    setTimeout(() => 
+     3000);
+  }})
+
   return (
     <div className="app">
       {showResult ? (
-        <div className="score-section">
-         <Link to={`/products/${_id}`}>
-        <img
-          alt={name}
-          src={`/images/${image}`}
-        />
-        <p>{name}</p>
-      </Link>
+         <Jumbotron>
+           <div className="score-section">
+          
+          <h2>Thank you for completing the Questionaire.</h2>
+          <h2>You will be routed to a destination shortly.</h2>
+          <h2>Safe Travels!</h2>
+
+          <Redirect to="/products/6272f58dcb1ee55f286b224b" />
         </div>
+        </Jumbotron>
       ) : (
         <>
           <div className="question-section">
@@ -160,7 +158,6 @@ function Quiz() {
     </div>
   );
 }
-
 
 
 export default Quiz;

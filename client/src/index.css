@@ -1,7 +1,7 @@
 :root {
-  --primary: #027483;
-  --secondary: #e01818;
-  --tertiary: #B12704;
+  --primary: #266DB6;
+  --secondary: #6DCFF6;
+  --tertiary: #6DCFF6;
   --light: #fafafa;
   --dark: #2c2732;
   --error: rgb(228, 46, 1);
@@ -21,7 +21,7 @@ body {
 body {
   margin: 0;
   padding: 0;
-  font-family: 'modern';
+  font-family: "Avenir Next LT W01 Bold",sans-serif;
   font-weight: 400;
   line-height: 1.5;
   font-size: 18px;
@@ -37,7 +37,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Rubik', sans-serif;
+  font-family: "Avenir Next LT W01 Bold",sans-serif;
   font-weight: 500;
   margin: 5px 0;
   line-height: 1.25;
@@ -109,6 +109,61 @@ button:hover {
 button[disabled] {
   cursor: default;
   opacity: .8;
+}
+
+.button {
+  background-color: transparent;
+  border: 1px solid #266DB6;
+  box-sizing: border-box;
+  color: #00132C;
+  font-family: "Avenir Next LT W01 Bold",sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 12px;
+  padding: 14px 21px;
+  position: relative;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  margin: 0 2px;
+  justify-content: space-between;
+  list-style-type: none;
+text-align: center;
+}
+
+.button:hover,
+.button:active {
+  outline: 0;
+}
+
+.button:hover {
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.button:before {
+  background-color: #D5EDF6;
+  content: "";
+  height: calc(100% + 3px);
+  position: absolute;
+  right: -7px;
+  top: -6px;
+  transition: background-color 300ms ease-in;
+  width: 100%;
+  z-index: -1;
+  margin: 0 2px;
+  justify-content: space-between
+}
+
+.button:hover:before {
+  background-color: #6DCFF6;
+}
+
+@media (min-width: 768px) {
+  .button {
+    padding: 16px 32px;
+  }
 }
 
 img {
@@ -210,4 +265,20 @@ input:focus {
   .card {
     width: 100%;
   }
+}
+ul {
+  list-style-type: none;
+}
+html {
+  text-align: center;
+}
+
+about p {
+  text-align: center;
+  text-decoration: none;
+  color: brown;
+  margin: auto;
+  width: auto;
+  height: auto;
+  display: flex;
 }
