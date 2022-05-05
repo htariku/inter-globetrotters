@@ -3,7 +3,7 @@
 
 # Deployed Link
 
-- Heroku Link - https://inter-globetrotters.herokuapp.com/login
+- Heroku Link - https://app-inter-globetrotters.herokuapp.com/
 - Github Link - https://github.com/htariku/inter-globetrotters.git
 
 # Description
